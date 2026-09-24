@@ -1,0 +1,87 @@
+1. Using the math Module
+Program:
+
+import math
+
+num = 25
+
+print("Square root:", math.sqrt(num))
+print("Power:", math.pow(2, 3))
+
+Output:
+Square root: 5.0
+Power: 8.0
+
+2. Using the random Module
+Program:
+
+import random
+
+number = random.randint(1, 10)
+
+print("Random number:", number)
+
+Sample Output:
+Random number: 7
+
+The random number can be different each time you run the program.
+
+3. Creating and Using a Custom Module
+Create a file named calculator.py:
+
+def add(a, b):
+    return a + b
+
+def multiply(a, b):
+    return a * b
+
+Create another file named main.py:
+
+import calculator
+
+print("Addition:", calculator.add(10, 5))
+print("Multiplication:", calculator.multiply(10, 5))
+
+Output:
+Addition: 15
+Multiplication: 50
+
+4. Using the datetime Module
+Program:
+
+from datetime import date
+
+today = date(2026, 9, 24)
+
+print("Date:", today)
+print("Year:", today.year)
+print("Month:", today.month)
+print("Day:", today.day)
+
+Output:
+Date: 2026-09-24
+Year: 2026
+Month: 9
+Day: 24
+
+5. Creating and Using a Package
+Create this folder structure:
+
+my_package/
+    __init__.py
+    message.py
+main.py
+
+message.py:
+
+def welcome():
+    return "Welcome to Python Packages!"
+
+main.py:
+
+from my_package.message import welcome
+
+print(welcome())
+
+Output:
+Welcome to Python Packages!
